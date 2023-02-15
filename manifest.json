@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "TTS English",
+  "version": "1.0",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/16.png",
+      "24": "assets/24.png",
+      "32": "assets/32.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "notifications",
+    "storage"
+  ]
+}
