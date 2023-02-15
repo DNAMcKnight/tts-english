@@ -3,8 +3,15 @@
 <div class="container">
   <div>
     <div class="title">Input your text here</div>
-    <textarea id="text" rows="4" cols="28" maxlength="3027">What do you want me to read?</textarea>
-    Number of Characters: <span id="message">0</span>
+    <textarea id="text" rows="4" cols="28" maxlength="3027" placeholder="Enter text here..."></textarea>
+  </div>
+  <div>Number of Characters: <span id="count">0</span></div>
+  <div>
     <input type="submit" value="Play" />
+  </div>
+  <div>
+    <audio id = "audio" controls = "">
+        <source id="source" type="audio/wav" />
+    </audio>
   </div>
 </div>
