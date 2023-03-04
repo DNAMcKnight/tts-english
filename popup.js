@@ -11,8 +11,8 @@ textarea.onfocus = () => {
 //  when inputting expand window with a minimum size of 80
 textarea.oninput = () => {
   count.innerHTML = textarea.value.length;
-  textarea.style.height = '80';
-  textarea.style.height = Math.min(textarea.scrollHeight, 450) + "px"
+  textarea.style.height = 'auto';
+  textarea.style.height = Math.min(textarea.scrollHeight, 400) + "px"
 };
 
 // when button is clicked the event triggers
