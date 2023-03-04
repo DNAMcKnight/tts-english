@@ -1,42 +1,35 @@
 .container {
     width: 280px;
     color: #314d3e;
+    color-scheme: dark;
+    
   }
+
+#countMsg {
+    color: white;
+}
 
 .title {
     font-size: 14px;
     font-weight: bold;
     padding: 8px;
+    color: white;
 }
 
-.bookmarks {
-    margin: 5px 5px;
-    padding: 3px;
+#play {
+    font-size: 20px;
+    padding: 10px;
 }
 
-.bookmark {
-    display: flex;
-    border-bottom-color: #00254d;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-radius: 0.8rem;
-    padding: 3px;
-    padding-bottom: 7px;
-    margin-bottom: 7px;
+#audio {
+    font-size: 10px;
+    padding: 5px;
 }
 
-.bookmark-title {
-    padding-left: 2px;
+body {
+    background-color: #27282c;
 }
 
-.bookmark-controls img {
-    margin: 0 4px;
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-  }
-
-.bookmark-controls {
-    flex: auto;
-    text-align: right;
+#text {
+    background-color: #27282c;
 }
