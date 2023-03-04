@@ -2,32 +2,89 @@
     width: 280px;
     color: #314d3e;
     color-scheme: dark;
+    padding: 10px;
     
   }
 
+body {
+    --nav-height: 45px;
+    padding-top: var(--nav-height);
+    background-color: #27282c;
+}
+
 #countMsg {
     color: white;
-}
-
-.title {
-    font-size: 14px;
-    font-weight: bold;
-    padding: 8px;
-    color: white;
-}
-
-#play {
-    font-size: 20px;
     padding: 10px;
 }
 
-#audio {
-    font-size: 10px;
-    padding: 5px;
+.nav {
+    width:100%;
+    height: var(--nav-height);
+    position: fixed;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    top: 0;
+    left: 0;
+    background: #2080ee;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-body {
-    background-color: #27282c;
+.title {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+}
+
+.play {
+    background-color: #2080ee ;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 16px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.play span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.play span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+.play:hover span {
+    padding-right: 25px;
+  }
+
+.play:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+
+#audio {
+    font-size: 10px;
+    padding: 10px 0px;
 }
 
 #text {
