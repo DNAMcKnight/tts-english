@@ -1,6 +1,6 @@
 var textarea = document.getElementById("text");
 var count = document.getElementById("count");
-const submitButton = document.querySelector('input[type="submit"]');
+const submitButton = document.querySelector('.play')
 
 // when focused clear text if the text is the default text
 textarea.onfocus = () => {
@@ -23,7 +23,9 @@ submitButton.addEventListener("click", (event) => {
     textarea.value = "";
     count.innerHTML = 0;
   }
-  audioCallback();
+  else{
+    audioCallback();
+  }
 });
 
 async function audioCallback() {
